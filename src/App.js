@@ -10,6 +10,9 @@ class App extends Component {
       <div className="container">
       <div className="col-md-12">
       <div className="main-form-background">
+      <div className = "Title">
+      <p>React assingment for Quasix Solutions </p>
+      </div>
       <Text/>
       </div>
       </div>

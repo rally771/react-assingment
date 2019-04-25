@@ -1,6 +1,3 @@
-This project takes multiple inputs and shows the line where the words are found
-
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

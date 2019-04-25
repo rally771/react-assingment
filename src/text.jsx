@@ -34,7 +34,7 @@ export default class Text extends Component {
         
         console.log(multiplestring);
         const keys = Object.values(sentences) // got values from the splitted sentence
-for (const key of keys) {
+for (const key of keys) {// loop for each line
   i++;
   
   let keyvalue = key.split(" "); // get words from sentence
@@ -42,11 +42,11 @@ for (const key of keys) {
   let keyvalues = Object.values(keyvalue); //save values 
   
   let multiplestringvalues = Object.values(multiplestring); // for multiple words
-  for(const keyval of keyvalues ){ //
-    for(const multiplestringval of multiplestringvalues){
-    if (keyval === multiplestringval) {
+  for(const keyval of keyvalues ){ //find each word from sentences
+    for(const multiplestringval of multiplestringvalues){ // findd each word from word to search from
+    if (keyval === multiplestringval) { // If the value is equal to sentence
       await this.setState({
-       found : this.state.found.concat(i),
+       found : this.state.found.concat(i), // incremen
          stringvalue :this.state.stringvalue.concat( Object.values(sentences)[i-1]) // to display sentence 
       });
      
@@ -82,7 +82,7 @@ for (const key of keys) {
             </div>
             <div className="form-group">
                 <label htmlFor="inputtext">Please enter words to search for</label><br />
-                <input onChange = {this.handleChange} value = {this.state.textbox} name = "textbox" className="form-control text-form" id="inputtext" type="text" placeholder="Default input" />
+                <input onChange = {this.handleChange} value = {this.state.textbox} name = "textbox" className="form-control text-form" id="inputtext" type="text" placeholder="Enter Words to Search" />
             </div>
             <button type="button" onClick = {this.findingString} className="btn btn-primary button">Find Text</button>
             <button type="button" onClick = {this.resetForm} className="btn btn-primary button clear-button">Clear Search Results</button>
@@ -102,7 +102,6 @@ for (const key of keys) {
             <p id ="mainh1">{notfound}</p>
         }
         </div>
-     
     )
   }
 }
