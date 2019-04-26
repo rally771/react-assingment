@@ -1,3 +1,6 @@
+This is a react project which can take multiple words as input and display the line on which they were found.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
