@@ -1,9 +1,3 @@
-This project Takes sentences with endline as input , Takes a word , Searches the word in the sentence if found displays the line number and sentence in which it was found.
-
-
-
-
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
